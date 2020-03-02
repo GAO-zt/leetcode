@@ -23,7 +23,6 @@ public:
 class Solution {
 public:
     char nextGreatestLetter(vector<char>& letters, char target) {
-        auto pos = ;
         return letters[(std::upper_bound(letters.begin(), letters.end(), target) - letters.begin()) % letters.size()];
     }
 };
